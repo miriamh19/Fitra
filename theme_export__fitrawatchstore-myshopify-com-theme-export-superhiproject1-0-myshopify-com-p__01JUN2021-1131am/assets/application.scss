@@ -1,0 +1,48 @@
+// Put your styles in this file.
+// Note: "@import" rules aren’t supported.
+
+$main-font:'Helvetica Neue', Arial, helvectica, sans-serif;
+
+$black: #000000;
+$white:#ffffff;
+$color-accent: #ff3700;
+$color-text: #555555;
+
+$line-global: 20px;
+$guttter-global:$line-global*2;
+
+//base
+*{
+font-family: $main-font;
+box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    margin:0;
+    padding:0;
+    color:$black;
+    line-height: $line-global;
+}
+body{
+    background-color: $white;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+//utility classes
+.grid{
+    display: grid;
+    grid-column-gap: $guttter-global;
+    grid-row-gap: $guttter-global;
+}
+.two-columns{
+    grid-template-columns: 1fr 1fr ;
+}
+.main-content{
+    min-height: 100vh;
+    padding: $guttter-global;
+}
